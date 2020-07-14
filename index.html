@@ -8,11 +8,14 @@
 </head>
 <body>
 
-    <div id="app" v-html="phrase">
-        
+    <div id="list">
+        <ul>
+            <li v-for="person in people">
+                {{`${person.name} ${person.lastName}, ${person.age} years old`}}
+            </li>
+        </ul>
     </div>
-    <!-- app -->
-
+    <!-- list -->
     <script src="script.js"></script>
 </body>
 </html>
