@@ -1,11 +1,7 @@
-let list = new Vue({
-    el: '#list',
+let app = new Vue({
+    el: '#app',
     data: {
-        people: [
-            {name: 'Gustavo', lastName: 'Alves da Silva', age: 28},
-            {name: 'Mark', lastName: 'Manson', age: 32},
-            {name: 'Brad', lastName: 'Frost', age: 55},
-            {name: 'Ada', lastName: 'Lovelace', age: 99}
-        ]
+       firstNumber: 10,
+       secondNumber: 15
     }
 })

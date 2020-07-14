@@ -8,14 +8,12 @@
 </head>
 <body>
 
-    <div id="list">
-        <ul>
-            <li v-for="person in people">
-                {{`${person.name} ${person.lastName}, ${person.age} years old`}}
-            </li>
-        </ul>
+    <div id="app">
+        <span>{{ firstNumber }}</span>
+        <input type="text" v-model="secondNumber" />
+        <span>{{ firstNumber + parseInt(secondNumber) }}</span>
     </div>
-    <!-- list -->
+    <!-- app -->
     <script src="script.js"></script>
 </body>
 </html>
