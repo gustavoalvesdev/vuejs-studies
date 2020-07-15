@@ -9,12 +9,7 @@
 <body>
 
     <div id="app">
-        <span>{{ firstNumber }} + {{ secondNumber }} = </span>
-        <input type="number" v-model="result" />
-        <div v-if="result != ''">
-            <div v-if="firstNumber + secondNumber == parseInt(result)">RIGHT!!!</div>
-            <div v-else>WRONG!!!</div>
-        </div>
+        {{ show(name, age) }}
     </div>
     <!-- app -->
     <script src="script.js"></script>
