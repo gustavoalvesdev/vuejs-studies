@@ -9,21 +9,10 @@
 <body>
 
     <div id="app">
-        <div>
-            <p v-html="(
-                country == 'argentina' ? argentina :
-                country == 'brazil' ? brazil :
-                country == 'china' ? china :
-                country == 'uk' ? uk :
-                country == 'usa' ? usa : ''
-            )"></p>
-            <p v-html="(
-                country == 'argentina' ? 'South America' :
-                country == 'brazil' ? 'South America' :
-                country == 'china' ? 'Asia' :
-                country == 'uk' ? 'Europe' :
-                country == 'usa' ? 'North America' : ''
-            )"></p>
+
+        <div v-for="country in countries()">
+            <p v-html="country.flag"></p>
+            <p v-html="country.continent"></p>
         </div>
     </div>
     <!-- app -->

@@ -5,7 +5,6 @@ function flag(country) {
 let app = new Vue({
     el: '#app',
     data: {
-    	country: '',
     	argentina: flag('argentina'),
     	brazil: flag('brazil'),
     	china: flag('china'),
@@ -13,8 +12,14 @@ let app = new Vue({
     	usa: flag('usa')
     },
     methods: {
-
+    	countries: function() {
+    		return [
+    			{flag: this.argentina, continent: 'South America'},
+    			{flag: this.brazil, continent: 'South America'},
+    			{flag: this.china, continent: 'Asia'},
+    			{flag: this.uk, continent: 'Europe'},
+    			{flag: this.usa, continent: 'North America'}
+    		]
+    	}
     }
 })
-
-app.country = 'uk'
