@@ -9,11 +9,7 @@
 <body>
 
     <div id="app">
-
-        <div v-for="country in countries()">
-            <p v-html="country.flag"></p>
-            <p v-html="country.continent"></p>
-        </div>
+        <country :flag="china" continent="Asia"></country>
     </div>
     <!-- app -->
     <script src="script.js"></script>

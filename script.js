@@ -2,6 +2,14 @@ function flag(country) {
 	return `<img src="countries/${country}.png" />`;
 }
 
+Vue.component('country', {
+    props: [
+        'flag',
+        'continent'
+    ],
+    template: `<p v-html='flag + continent'></p>`
+})
+
 let app = new Vue({
     el: '#app',
     data: {
