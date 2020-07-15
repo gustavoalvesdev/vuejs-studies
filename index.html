@@ -9,7 +9,22 @@
 <body>
 
     <div id="app">
-        {{ show(name, age) }}
+        <div>
+            <p v-html="(
+                country == 'argentina' ? argentina :
+                country == 'brazil' ? brazil :
+                country == 'china' ? china :
+                country == 'uk' ? uk :
+                country == 'usa' ? usa : ''
+            )"></p>
+            <p v-html="(
+                country == 'argentina' ? 'South America' :
+                country == 'brazil' ? 'South America' :
+                country == 'china' ? 'Asia' :
+                country == 'uk' ? 'Europe' :
+                country == 'usa' ? 'North America' : ''
+            )"></p>
+        </div>
     </div>
     <!-- app -->
     <script src="script.js"></script>

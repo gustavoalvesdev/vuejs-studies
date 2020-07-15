@@ -1,12 +1,20 @@
+function flag(country) {
+	return `<img src="countries/${country}.png" />`;
+}
+
 let app = new Vue({
     el: '#app',
     data: {
-       name: 'Gustavo Alves da Silva',
-       age: 28
+    	country: '',
+    	argentina: flag('argentina'),
+    	brazil: flag('brazil'),
+    	china: flag('china'),
+    	uk: flag('uk'),
+    	usa: flag('usa')
     },
     methods: {
-    	show: (name, age) => {
-    		return `Hello, ${name} - age: ${age}`
-    	}
+
     }
 })
+
+app.country = 'uk'
