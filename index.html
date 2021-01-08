@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
+
 <body>
 
     <div id="app">
-        <country :flag="china" continent="Asia"></country>
+        <header class="header">
+
+        </header>
+        <!-- header -->
+        <section class="container">
+            <section class="container__sidebar">
+                <a :href="url">Clique aqui</a>
+                <button @click="fazAlgumaCoisa">Clique em mim</button>
+            </section>
+            <!-- container__sidebar -->
+            <section class="container__sidebar">
+
+            </section>
+            <!-- container__sidebar -->
+        </section>
+        <!-- container -->
+        <footer class="footer">
+
+        </footer>
+        <!-- footer -->
     </div>
     <!-- app -->
     <script src="script.js"></script>
 </body>
+
 </html>
